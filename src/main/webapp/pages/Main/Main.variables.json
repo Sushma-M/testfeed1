@@ -1,0 +1,41 @@
+{
+  "serviceVariable1" : {
+    "_id" : "wm-serviceVariable1-wm.ServiceVariable-1479210903070",
+    "name" : "serviceVariable1",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "feedURL",
+      "value" : "https://mail.google.com/mail/feed/atom",
+      "type" : "string"
+    }, {
+      "target" : "httpBasicAuthUsername",
+      "value" : "wavemaker.apps@gmail.com",
+      "type" : "string"
+    }, {
+      "target" : "httpBasicAuthPassword",
+      "value" : "pramati123",
+      "type" : "string"
+    }, {
+      "target" : "connectionTimeout",
+      "value" : "1000",
+      "type" : "integer"
+    } ],
+    "type" : "com.wavemaker.runtime.feed.model.Feed",
+    "service" : "FeedService",
+    "operation" : "getFeedWithHttpConfig",
+    "operationId" : "FeedServiceController_getFeedWithHttpConfig",
+    "operationType" : "get",
+    "serviceType" : "FeedService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : true,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "FeedService"
+  }
+}

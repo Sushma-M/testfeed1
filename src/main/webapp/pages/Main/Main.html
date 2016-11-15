@@ -3,7 +3,19 @@
     <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
     <wm-content name="content">
         <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav"></wm-left-panel>
-        <wm-page-content columnwidth="8" paddingleft="15" paddingright="15" name="mainContent">
+        <wm-page-content columnwidth="8" name="mainContent" padding="unset 15px">
+            <wm-grid title="" dataset="bind:Variables.serviceVariable1.dataSet" navigation="Basic" name="grid1">
+                <wm-grid-column binding="author" caption="Author" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-grid-column>
+                <wm-grid-column binding="copyright" caption="Copyright" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-grid-column>
+                <wm-grid-column binding="description" caption="Description" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-grid-column>
+                <wm-grid-column binding="encoding" caption="Encoding" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-grid-column>
+                <wm-grid-column binding="entries[0].author" caption="Entries[0] Author" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-grid-column>
+                <wm-grid-column binding="entries[0].description" caption="Entries[0] Description" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-grid-column>
+                <wm-grid-column binding="entries[0].link" caption="Entries[0] Link" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-grid-column>
+                <wm-grid-column binding="entries[0].publishedDate" caption="Entries[0] Published Date" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-grid-column>
+                <wm-grid-column binding="entries[0].title" caption="Entries[0] Title" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-grid-column>
+                <wm-grid-column binding="entries[0].updatedDate" caption="Entries[0] Updated Date" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-grid-column>
+            </wm-grid>
         </wm-page-content>
         <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
     </wm-content>
